@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Pkm.MainWindow"
+        Title="Pkm">
+    <Grid RowDefinitions="32,*,32">
+        <Panel Grid.Row="0">
+            <Grid ColumnDefinitions="Auto,*,Auto, Auto">
+                <Label   Grid.Column="0" HorizontalAlignment="Center">Search for package:</Label>
+                <TextBox Grid.Column="1" x:Name="TxSearchInput" HorizontalAlignment="Stretch" Margin="5 0"></TextBox>
+                <Button  Grid.Column="2" x:Name="BtnSearch" Margin="5 0" Click="BtnSearch_OnClick">Search</Button>
+                <Button  Grid.Column="3" x:Name="BtnRefresh" Click="BtnRefresh_OnClick" Margin="5 0">Refresh</Button>
+            </Grid>
+        </Panel>
+        <ListBox Grid.Row="1" x:Name="LsPackages">
+        </ListBox>
+        <Panel Grid.Row="2">
+            <ProgressBar x:Name="PbProgress" HorizontalAlignment="Right" Maximum="100" Margin="0 0 128 0"></ProgressBar>
+            <Button x:Name="BtnApply" HorizontalAlignment="Right" IsEnabled="False" Margin="5 0">Apply Changes</Button>
+        </Panel>
+    </Grid>
+</Window>

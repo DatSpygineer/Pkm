@@ -1,0 +1,8 @@
+# Ignore IDE folders
+.vs
+.vscode
+.idea
+
+# Ignore build folder
+bin
+obj 

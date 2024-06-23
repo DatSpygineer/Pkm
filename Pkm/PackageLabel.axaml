@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="https://github.com/projektanker/icons.avalonia"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="32"
+             x:Class="Pkm.PackageLabel">
+    <Panel>
+        <Label x:Name="Label" VerticalAlignment="Center">Package</Label>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Margin="24 0">
+            <Button x:Name="BtnInstall" Margin="5 0" i:Attached.Icon="mdi-checkbox-blank-outline" Click="BtnInstall_OnClick">
+                <ToolTip.Tip>Install/Update package</ToolTip.Tip>
+            </Button>
+            <Button x:Name="BtnRemove" Margin="0 0 5 0" IsEnabled="False" i:Attached.Icon="mdi-delete-outline" Click="BtnRemove_OnClick">
+                <ToolTip.Tip>Remove package</ToolTip.Tip>
+            </Button>
+        </StackPanel>
+    </Panel>
+</UserControl>
