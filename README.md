@@ -1,4 +1,4 @@
-# PKM
+# PKM (Package Manager)
 
 ## About
 Pkm is a GUI application for Linux package managers. With this application you can list, install, uninstall and update packages.
